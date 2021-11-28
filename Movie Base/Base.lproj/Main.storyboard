@@ -152,6 +152,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odP-hS-8tQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="H9j-8X-hwg" customClass="SignUpAssembly" customModule="Movie_Base" customModuleProvider="target">
+                    <connections>
+                        <outlet property="signUpViewController" destination="W7q-LF-Pfc" id="DKk-k8-hCa"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1874" y="520"/>
         </scene>

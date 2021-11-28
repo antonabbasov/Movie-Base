@@ -36,10 +36,10 @@ class LoginInteractor: LoginInteractorInput {
         if  (email?.trimmingCharacters(in: .whitespacesAndNewlines)) == "" ||
             (password?.trimmingCharacters(in: .whitespacesAndNewlines)) == "" {
             
-            output.errorLoginingUser("Please filled in all fields.")
+            return "Please filled in all fields"
+        } else {
+            return nil
         }
-        
-        return nil
     }
     
     private func obtainClearedField(_ string: String) -> String {

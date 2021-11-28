@@ -25,6 +25,15 @@
 		0669B89F275412BD0098F3CB /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B89E275412BD0098F3CB /* FirebaseManager.swift */; };
 		0669B8A12754197A0098F3CB /* AuthHomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A02754197A0098F3CB /* AuthHomeAssembly.swift */; };
 		0669B8A327541EBB0098F3CB /* AuthLoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A227541EBB0098F3CB /* AuthLoginAssembly.swift */; };
+		0669B8A5275429090098F3CB /* SignUpViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A4275429090098F3CB /* SignUpViewControllerInput.swift */; };
+		0669B8A7275429130098F3CB /* SignUpViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A6275429130098F3CB /* SignUpViewControllerOutput.swift */; };
+		0669B8AA2754293A0098F3CB /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A92754293A0098F3CB /* SignUpInteractor.swift */; };
+		0669B8AC275429410098F3CB /* SignUpInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8AB275429410098F3CB /* SignUpInteractorInput.swift */; };
+		0669B8AE275429480098F3CB /* SignUpInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8AD275429480098F3CB /* SignUpInteractorOutput.swift */; };
+		0669B8B1275429620098F3CB /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8B0275429620098F3CB /* SignUpRouter.swift */; };
+		0669B8B3275429710098F3CB /* SignUpRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8B2275429710098F3CB /* SignUpRouterInput.swift */; };
+		0669B8B52754297E0098F3CB /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8B42754297E0098F3CB /* SignUpPresenter.swift */; };
+		0669B8B7275436120098F3CB /* SignUpAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8B6275436120098F3CB /* SignUpAssembly.swift */; };
 		06C591A5274E6697002EA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591A4274E6697002EA9EB /* AppDelegate.swift */; };
 		06C591A7274E6697002EA9EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591A6274E6697002EA9EB /* SceneDelegate.swift */; };
 		06C591A9274E6697002EA9EB /* AuthHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591A8274E6697002EA9EB /* AuthHomeViewController.swift */; };
@@ -58,6 +67,15 @@
 		0669B89E275412BD0098F3CB /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		0669B8A02754197A0098F3CB /* AuthHomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeAssembly.swift; sourceTree = "<group>"; };
 		0669B8A227541EBB0098F3CB /* AuthLoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginAssembly.swift; sourceTree = "<group>"; };
+		0669B8A4275429090098F3CB /* SignUpViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerInput.swift; sourceTree = "<group>"; };
+		0669B8A6275429130098F3CB /* SignUpViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerOutput.swift; sourceTree = "<group>"; };
+		0669B8A92754293A0098F3CB /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		0669B8AB275429410098F3CB /* SignUpInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractorInput.swift; sourceTree = "<group>"; };
+		0669B8AD275429480098F3CB /* SignUpInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractorOutput.swift; sourceTree = "<group>"; };
+		0669B8B0275429620098F3CB /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		0669B8B2275429710098F3CB /* SignUpRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouterInput.swift; sourceTree = "<group>"; };
+		0669B8B42754297E0098F3CB /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		0669B8B6275436120098F3CB /* SignUpAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAssembly.swift; sourceTree = "<group>"; };
 		06C591A1274E6697002EA9EB /* Movie Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C591A4274E6697002EA9EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C591A6274E6697002EA9EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +132,11 @@
 		0669B8782753E1F90098F3CB /* Auth SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				0669B8AF275429510098F3CB /* Router */,
+				0669B8A82754291C0098F3CB /* Interactor */,
 				0669B88F275400150098F3CB /* View */,
+				0669B8B42754297E0098F3CB /* SignUpPresenter.swift */,
+				0669B8B6275436120098F3CB /* SignUpAssembly.swift */,
 			);
 			path = "Auth SignUp";
 			sourceTree = "<group>";
@@ -170,8 +192,29 @@
 			isa = PBXGroup;
 			children = (
 				06C591D7274E6D54002EA9EB /* SignUpViewController.swift */,
+				0669B8A4275429090098F3CB /* SignUpViewControllerInput.swift */,
+				0669B8A6275429130098F3CB /* SignUpViewControllerOutput.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0669B8A82754291C0098F3CB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0669B8A92754293A0098F3CB /* SignUpInteractor.swift */,
+				0669B8AB275429410098F3CB /* SignUpInteractorInput.swift */,
+				0669B8AD275429480098F3CB /* SignUpInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0669B8AF275429510098F3CB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0669B8B0275429620098F3CB /* SignUpRouter.swift */,
+				0669B8B2275429710098F3CB /* SignUpRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		06C59198274E6697002EA9EB = {
@@ -372,16 +415,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0669B8B7275436120098F3CB /* SignUpAssembly.swift in Sources */,
+				0669B8B1275429620098F3CB /* SignUpRouter.swift in Sources */,
 				06C591D6274E6D47002EA9EB /* LoginViewController.swift in Sources */,
 				0669B897275404230098F3CB /* LoginInteractorInput.swift in Sources */,
 				0669B893275403F40098F3CB /* LoginViewControllerOutput.swift in Sources */,
 				0669B89D2754045D0098F3CB /* LoginRouterInput.swift in Sources */,
+				0669B8A5275429090098F3CB /* SignUpViewControllerInput.swift in Sources */,
 				0669B89F275412BD0098F3CB /* FirebaseManager.swift in Sources */,
 				06C591A9274E6697002EA9EB /* AuthHomeViewController.swift in Sources */,
 				06C591AF274E6697002EA9EB /* Movie_Base.xcdatamodeld in Sources */,
 				06C591D8274E6D54002EA9EB /* SignUpViewController.swift in Sources */,
 				0669B87D2753E37B0098F3CB /* AuthHomeViewControllerOutput.swift in Sources */,
 				0669B8812753E3B80098F3CB /* AuthHomePresenter.swift in Sources */,
+				0669B8B3275429710098F3CB /* SignUpRouterInput.swift in Sources */,
+				0669B8AC275429410098F3CB /* SignUpInteractorInput.swift in Sources */,
+				0669B8AE275429480098F3CB /* SignUpInteractorOutput.swift in Sources */,
 				0669B89B2754043A0098F3CB /* LoginRouter.swift in Sources */,
 				0669B8952754040F0098F3CB /* LoginInteractor.swift in Sources */,
 				0669B8A12754197A0098F3CB /* AuthHomeAssembly.swift in Sources */,
@@ -389,12 +438,15 @@
 				0669B860274E91640098F3CB /* Utilities.swift in Sources */,
 				0669B891275403EB0098F3CB /* LoginViewControllerInput.swift in Sources */,
 				06C591DA274E6D5E002EA9EB /* HomeViewController.swift in Sources */,
+				0669B8A7275429130098F3CB /* SignUpViewControllerOutput.swift in Sources */,
 				0669B88E2753FFF20098F3CB /* LoginPresenter.swift in Sources */,
 				0669B8992754042C0098F3CB /* LoginInteractorOutput.swift in Sources */,
 				06C591A5274E6697002EA9EB /* AppDelegate.swift in Sources */,
 				06C591A7274E6697002EA9EB /* SceneDelegate.swift in Sources */,
 				0669B8832753EC450098F3CB /* AuthHomeRouter.swift in Sources */,
 				0669B8852753ECAE0098F3CB /* AuthHomeRouterInput.swift in Sources */,
+				0669B8AA2754293A0098F3CB /* SignUpInteractor.swift in Sources */,
+				0669B8B52754297E0098F3CB /* SignUpPresenter.swift in Sources */,
 				0669B864274EB76B0098F3CB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
