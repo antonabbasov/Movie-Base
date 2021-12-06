@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F00E40DB-C6FC-42E1-8967-4F27D7FCCD81"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EAFB9B93-C10E-488D-A8E4-D6451CEA2B43"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Base/Data Module/FirebaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "993D6D92-C320-4A4C-9D10-EA299F2BD0E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Base/Authentication Module/Auth Login/Interactor/LoginInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "loginUser(email:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "993D6D92-C320-4A4C-9D10-EA299F2BD0E7 - 7ecb00f702fce2f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Base.LoginInteractor.loginUser(email: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Movie Base"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bigfattony/Desktop/Resume%20/Movie%20Base/Movie%20Base/Authentication%20Module/Auth%20Login/Interactor/LoginInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1330">
+               </Location>
+               <Location
+                  uuid = "993D6D92-C320-4A4C-9D10-EA299F2BD0E7 - 19a03b2a0cee390b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in Movie_Base.LoginInteractor.loginUser(email: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "Movie Base"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bigfattony/Desktop/Resume%20/Movie%20Base/Movie%20Base/Authentication%20Module/Auth%20Login/Interactor/LoginInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A325A01-3FF0-4A03-A1EA-8FEED9E6DD2F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie Base/Authentication Module/Auth SignUp/Interactor/SignUpInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "signUpUser(email:password:firstname:lastname:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
