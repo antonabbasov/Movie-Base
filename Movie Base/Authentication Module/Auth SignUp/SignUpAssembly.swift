@@ -5,31 +5,26 @@
 //  Created by Anton on 29.11.2021.
 //
 
-import Foundation
 import UIKit
 
-class SignUpAssembly: NSObject {
-
+final class SignUpAssembly: NSObject {
+    
+    //MARK: - Outlets
+    
     @IBOutlet weak var signUpViewController: UIViewController!
+    
+    //MARK: - NSObject
     
     override func awakeFromNib() {
         super.awakeFromNib()
         guard let signUpViewController = signUpViewController as? SignUpViewController else { return }
-        
-        let signUpPresenter = SignUpPresenter()
-        let signUpRouter = SignUpRouter()
-        let signUpInteractor = SignUpInteractor()
-        
+    
+        let signUpRouter = SignUpRouter(signUpViewController: signUpViewController)
         let firebaseManager = FirebaseManager()
+        let signUpInteractor = SignUpInteractor(firebaseManager: firebaseManager)
+        let signUpPresenter = SignUpPresenter(view: signUpViewController, interactor: signUpInteractor, router: signUpRouter)
         
-        signUpViewController.signUpViewOutput = signUpPresenter
-        
-        signUpPresenter.interactor = signUpInteractor
-        signUpPresenter.router = signUpRouter
-        signUpPresenter.view = signUpViewController
-        signUpRouter.signUpViewController = signUpViewController
         signUpInteractor.interactorOutput = signUpPresenter
-        signUpInteractor.firebaseManager = firebaseManager
-        
+        signUpViewController.signUpViewOutput = signUpPresenter
     }
 }

@@ -5,15 +5,24 @@
 //  Created by Anton on 28.11.2021.
 //
 
-import Foundation
-
-class LoginRouter: LoginRouterInput {
-    weak var loginViewController: LoginViewController!
+final class LoginRouter: LoginRouterInput {
+    
+    //MARK: - Variables
+    
+    private weak var loginViewController: LoginViewController?
+    
+    //MARK: - Init
+    
+    init(loginViewCotroller: LoginViewController) {
+        self.loginViewController = loginViewCotroller
+    }
+    
+    //MARK: - Instance Methods
     
     func transitionToMainScreen() {
-        let homeViewController = loginViewController.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homveViewController) as? HomeViewController
+        let homeViewController = loginViewController?.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homveViewController) as? HomeViewController
         
-        loginViewController.view.window?.rootViewController = homeViewController
-        loginViewController.view.window?.makeKeyAndVisible()
+        loginViewController?.view.window?.rootViewController = homeViewController
+        loginViewController?.view.window?.makeKeyAndVisible()
     }
 }

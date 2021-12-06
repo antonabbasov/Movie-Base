@@ -5,16 +5,25 @@
 //  Created by Anton on 28.11.2021.
 //
 
-import Foundation
-
-class AuthHomeRouter: AuthHomeRouterInput {
-    weak var authHomeViewController: AuthHomeViewController!
+final class AuthHomeRouter: AuthHomeRouterInput {
     
-    func transitionToLoginScreen() {
-        authHomeViewController.performSegue(withIdentifier: "homeToLogin", sender: nil)
+    //MARK: - Variables
+    
+    private weak var authHomeViewController: AuthHomeViewController?
+    
+    //MARK: - Init
+    
+    init(authHomeViewController: AuthHomeViewController) {
+        self.authHomeViewController = authHomeViewController
     }
     
-    func transitionToSignUpScreen() {
-        authHomeViewController.performSegue(withIdentifier: "homeToSignUp", sender: nil)
+    //MARK: - AuthHomeRouterInput
+    
+    internal func transitionToLoginScreen() {
+        authHomeViewController?.performSegue(withIdentifier: "homeToLogin", sender: nil)
+    }
+    
+    internal func transitionToSignUpScreen() {
+        authHomeViewController?.performSegue(withIdentifier: "homeToSignUp", sender: nil)
     }
 }

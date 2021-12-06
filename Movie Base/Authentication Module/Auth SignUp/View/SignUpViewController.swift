@@ -9,10 +9,10 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class SignUpViewController: UIViewController, LoginViewControllerInput {
+final class SignUpViewController: UIViewController, LoginViewControllerInput {
     
-    var signUpViewOutput: SignUpViewControllerOutput!
-
+    //MARK: - Outlets
+    
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -20,12 +20,17 @@ class SignUpViewController: UIViewController, LoginViewControllerInput {
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var signUpButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setup()
-        // Do any additional setup after loading the view.
+    //MARK: - Variables
+    
+    var signUpViewOutput: SignUpViewControllerOutput!
+    
+    //MARK: - Actions
+    
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        signUpViewOutput.didPressSignUp(email: emailTextField.text, password: passwordTextField.text, firstname: firstNameTextField.text, lastname: lastNameTextField.text)
     }
+    
+    //MARK: - Instance Methods
     
     func setup() {
         errorLabel.isHidden = true
@@ -33,28 +38,29 @@ class SignUpViewController: UIViewController, LoginViewControllerInput {
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        Utilities.styleHollowButton(signUpButton)
+        Utilities.styleFilledButton(signUpButton)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     func showError(_ message: String) {
         errorLabel.text = message
         errorLabel.isHidden = false
     }
     
+    //MARK: - UIViewController
     
-    @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        
-        signUpViewOutput.didPressSignUp(email: emailTextField.text, password: passwordTextField.text, firstname: firstNameTextField.text, lastname: lastNameTextField.text)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
     }
-        
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+        navigationController?.navigationBar.tintColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 }
