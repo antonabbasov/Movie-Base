@@ -19,7 +19,5 @@ struct Constants {
     struct InternalErrors {
         static let clearingFieldsError = "Error clearing strings"
     }
-    struct AuthHomeControllerVideo {
-        static let authHomeControllerVideoPath = "pexels-tima-miroshnichenko-7989632"
-    }
+    
 }

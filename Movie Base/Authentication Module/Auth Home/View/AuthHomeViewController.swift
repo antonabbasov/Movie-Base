@@ -35,7 +35,7 @@ final class AuthHomeViewController: UIViewController {
     // MARK: - Instance Methods
     
     private func playBackGroundVideo() {
-        let theURL = Bundle.main.url(forResource:Constants.AuthHomeControllerVideo.authHomeControllerVideoPath, withExtension: "mp4")
+        let theURL = Bundle.main.url(forResource:"pexels-tima-miroshnichenko-7989632", withExtension: "mp4")
         
         avPlayer = AVPlayer(url: theURL!)
         avPlayerLayer = AVPlayerLayer(player: avPlayer)
