@@ -118,7 +118,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="e6r-RQ-xq8"/>
                                         </constraints>
-                                        <state key="normal" title="Sign Up"/>
+                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="signUpButtonPressed:" destination="W7q-LF-Pfc" eventType="touchUpInside" id="aUn-b0-oFH"/>
                                         </connections>
@@ -192,7 +192,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="oAh-Lq-Mmx"/>
                                         </constraints>
-                                        <state key="normal" title="Login"/>
+                                        <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="twP-QR-rNn" eventType="touchUpInside" id="UM2-xm-mF9"/>
                                         </connections>
@@ -270,9 +270,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="13E-cN-HaR">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uzd-pq-L2X"/>
                     </connections>

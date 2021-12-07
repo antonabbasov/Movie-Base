@@ -5,23 +5,20 @@
 //  Created by Anton on 28.11.2021.
 //
 
+import Foundation
 import UIKit
 
-final class AuthHomeAssembly: NSObject {
-    
-    //MARK: - Outlets
-    
+class AuthHomeAssembly: NSObject {
     @IBOutlet weak var viewController: UIViewController!
-    
-    //MARK: - NSObject
     
     override func awakeFromNib() {
         super.awakeFromNib()
         guard let viewController = viewController as? AuthHomeViewController else { return }
+        let authHomePresenter = AuthHomePresenter()
+        let authHomeRouter = AuthHomeRouter()
         
-        let authHomeRouter = AuthHomeRouter(authHomeViewController: viewController)
-        let authHomePresenter = AuthHomePresenter(authHomeRouter: authHomeRouter)
-        
+        authHomePresenter.router = authHomeRouter
+        authHomeRouter.authHomeViewController = viewController
         viewController.authHomeViewControllerOutput = authHomePresenter
     }
 }

@@ -5,26 +5,28 @@
 //  Created by Anton on 28.11.2021.
 //
 
+import Foundation
 import UIKit
 
-final class AuthLoginAssembly: NSObject {
-    
-    //MARK: - Outlets
-    
+class AuthLoginAssembly: NSObject {
     @IBOutlet weak var loginViewController: UIViewController!
-    
-    //MARK: - NSObject
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         guard let loginViewController = loginViewController as? LoginViewController else { return }
         
-        let firebaseManager = FirebaseManager()
-        let loginRouter = LoginRouter(loginViewCotroller: loginViewController)
-        let loginInteractor = LoginInteractor(firebaseManager: firebaseManager)
-        let loginPresenter = LoginPresenter(view: loginViewController, interactor: loginInteractor, router: loginRouter)
+        let loginPresenter = LoginPresenter()
+        let loginRouter = LoginRouter()
+        let loginInteractor = LoginInteractor()
         
-        loginInteractor.output = loginPresenter
+        let firebaseManager = FirebaseManager()
+        
         loginViewController.loginViewOutput = loginPresenter
+        loginPresenter.interactor = loginInteractor
+        loginPresenter.router = loginRouter
+        loginPresenter.view = loginViewController
+        loginRouter.loginViewController = loginViewController
+        loginInteractor.output = loginPresenter
+        loginInteractor.firebaseManager = firebaseManager
+        
     }
 }

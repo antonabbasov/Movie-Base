@@ -5,27 +5,44 @@
 //  Created by Anton on 28.11.2021.
 //
 
-final class LoginInteractor: LoginInteractorInput {
+import Foundation
+
+class LoginInteractor: LoginInteractorInput {
     
-    //MARK: - Variables
+    weak var output: LoginInteractorOutput!
+    var firebaseManager: FirebaseManager!
     
-    weak var output: LoginInteractorOutput?
-    private let firebaseManager: FirebaseManager
-    
-    //MARK: - Init
-    
-    init (firebaseManager: FirebaseManager) {
-        self.firebaseManager = firebaseManager
-    }
+    //MARK: - DATA MANAGER
     
     //MARK: - LoginInteractorInput
-    internal func loginUser(email: String, password: String) {
-        firebaseManager.loginUser(email: email, password: password) { [weak self] (completionSuccses: Bool) in
-            if completionSuccses {
-                self?.output?.didFinishLoginingUser()
+    func loginUser(email: String?, password: String?) {
+        var error = validateUserCredentials(email: email, password: password)
+        
+        if error != nil {
+            output.errorLoginingUser(error!)
+        } else {
+            let email = obtainClearedField(email!)
+            let password = obtainClearedField(password!)
+            error = firebaseManager.loginUser(email: email, password: password)
+            if error != nil {
+                output.errorLoginingUser(error!)
             } else {
-                self?.output?.errorLoginingUser(Constants.AuthErrors.errorLoginingUser)
+                output.didFinishLoginingUser()
             }
+    }
+    }
+    
+    private func validateUserCredentials(email: String?, password: String?) -> String? {
+        if  (email?.trimmingCharacters(in: .whitespacesAndNewlines)) == "" ||
+            (password?.trimmingCharacters(in: .whitespacesAndNewlines)) == "" {
+            
+            return "Please filled in all fields"
+        } else {
+            return nil
         }
+    }
+    
+    private func obtainClearedField(_ string: String) -> String {
+        return string.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

@@ -8,55 +8,34 @@
 import UIKit
 import Firebase
 
-final class LoginViewController: UIViewController, LoginViewControllerInput {
-    
-    //MARK: - Outlets
-    
+class LoginViewController: UIViewController, LoginViewControllerInput {
+
+    var loginViewOutput: LoginViewControllerOutput!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     
-    //MARK: - Variables
-    
-    var loginViewOutput: LoginViewControllerOutput!
-    
-    // MARK: - Actions
-    
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
-        loginViewOutput.didPressLogin(email: emailTextField.text, password: passwordTextField.text)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+        // Do any additional setup after loading the view.
     }
     
-    //MARK: - Instance methods
-    
-    private func setup() {
+    func setup() {
         errorLabel.isHidden = true
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
     }
     
-    // MARK: - UIViewController
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setup()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-        navigationController?.navigationBar.tintColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        loginViewOutput.didPressLogin(email: emailTextField.text, password: passwordTextField.text)
     }
     
     //MARK: - LoginViewControllerInput
     
-    internal func showError(_ message: String) {
+    func showError(_ message: String) {
         errorLabel.text = message
         errorLabel.isHidden = false
     }
