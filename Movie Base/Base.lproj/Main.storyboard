@@ -232,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="1874" y="-218"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Root Tab Bar View Controller-->
         <scene sceneID="zds-mM-Yww">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="bkg-9d-WlX" customClass="HomeViewController" customModule="Movie_Base" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="bkg-9d-WlX" customClass="RootTabBarViewController" customModule="Movie_Base" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dzr-JW-sCH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

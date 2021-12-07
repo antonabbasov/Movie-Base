@@ -25,5 +25,5 @@ final class AuthHomeRouter: AuthHomeRouterInput {
     
     internal func transitionToSignUpScreen() {
         authHomeViewController?.performSegue(withIdentifier: "homeToSignUp", sender: nil)
-    }
+    }    
 }

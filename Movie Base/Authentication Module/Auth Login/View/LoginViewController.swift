@@ -18,7 +18,6 @@ final class LoginViewController: UIViewController, LoginViewControllerInput {
     @IBOutlet weak var loginButton: UIButton!
     
     //MARK: - Variables
-    
     var loginViewOutput: LoginViewControllerOutput!
     
     // MARK: - Actions

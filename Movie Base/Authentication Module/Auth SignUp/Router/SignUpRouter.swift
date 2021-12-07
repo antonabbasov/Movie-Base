@@ -20,7 +20,7 @@ final class SignUpRouter: SigUpRouterInput {
     //MARK: - Instance Methods
     
     internal func transitionToMainScreen() {
-        let homeViewController = signUpViewController?.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homveViewController) as? HomeViewController
+        let homeViewController = signUpViewController?.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? RootTabBarViewController
         
         signUpViewController?.view.window?.rootViewController = homeViewController
         signUpViewController?.view.window?.makeKeyAndVisible()

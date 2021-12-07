@@ -11,7 +11,6 @@ import Firebase
 
 class FirebaseManager {
     func loginUser(email: String, password: String,  completionSuccses: @escaping (Bool) -> ()) {
-        
         Auth.auth().signIn(withEmail: email, password: password) {
             (result, error) in
             if error != nil {
@@ -23,7 +22,6 @@ class FirebaseManager {
     }
     
     func signUpUser(email: String, password: String, firstname: String, lastname: String, completionSuccses: @escaping (Bool) -> ()) {
-        
         Auth.auth().createUser(withEmail: email, password: password) { result, err in
             if err != nil {
                 completionSuccses(false)

@@ -20,10 +20,10 @@ final class AuthHomePresenter: AuthHomeViewControllerOutput {
     //MARK: - AuthHomeViewControllerOutput
     
     internal func didPressLoginButton() {
-        //router.transitionToLoginScreen()
+        router.transitionToLoginScreen()
     }
     
     internal func didPressSignUpButton() {
-        //router.transitionToSignUpScreen()
+        router.transitionToSignUpScreen()
     }
 }

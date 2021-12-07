@@ -1,16 +1,17 @@
 //
-//  HomeViewController.swift
+//  ProfileViewController.swift
 //  Movie Base
 //
-//  Created by Anton on 24.11.2021.
+//  Created by Anton on 06.12.2021.
 //
 
 import UIKit
 
-final class HomeViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 }

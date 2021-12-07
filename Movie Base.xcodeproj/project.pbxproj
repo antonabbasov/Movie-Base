@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06526C62275E96380024B129 /* TMDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C61275E96380024B129 /* TMDBManager.swift */; };
+		06526C65275E96950024B129 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C64275E96950024B129 /* MovieModel.swift */; };
+		06526C67275E96C90024B129 /* NowPlayingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C66275E96C90024B129 /* NowPlayingModel.swift */; };
+		06526C72275EA7080024B129 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C71275EA7080024B129 /* ProfileViewController.swift */; };
+		06526C74275EA72F0024B129 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C73275EA72F0024B129 /* HomeViewController.swift */; };
+		06526C76275EA7480024B129 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C75275EA7480024B129 /* SearchViewController.swift */; };
+		06526C7B275EA9180024B129 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C7A275EA9180024B129 /* HomePresenter.swift */; };
+		06526C7E275EA9350024B129 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C7D275EA9350024B129 /* HomeInteractor.swift */; };
+		06526C80275EA9400024B129 /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C7F275EA9400024B129 /* HomeInteractorInput.swift */; };
+		06526C82275EA94C0024B129 /* HomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C81275EA94C0024B129 /* HomeInteractorOutput.swift */; };
+		06526C85275EA9660024B129 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C84275EA9660024B129 /* HomeRouter.swift */; };
+		06526C87275EA9800024B129 /* HomeViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C86275EA9800024B129 /* HomeViewControllerInput.swift */; };
+		06526C89275EA9910024B129 /* HomeViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C88275EA9910024B129 /* HomeViewControllerOutput.swift */; };
+		06526C8B275EA9A30024B129 /* HomeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C8A275EA9A30024B129 /* HomeRouterInput.swift */; };
+		06526C90275F7D100024B129 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C8F275F7D100024B129 /* SearchPresenter.swift */; };
+		06526C93275F7F530024B129 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C92275F7F530024B129 /* SearchInteractor.swift */; };
+		06526C95275F7F5E0024B129 /* SearchInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C94275F7F5E0024B129 /* SearchInteractorInput.swift */; };
+		06526C97275F7F6D0024B129 /* SearchInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C96275F7F6D0024B129 /* SearchInteractorOutput.swift */; };
+		06526C99275F7F7E0024B129 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C98275F7F7E0024B129 /* SearchRouter.swift */; };
+		06526C9B275F7F900024B129 /* SearchRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C9A275F7F900024B129 /* SearchRouterInput.swift */; };
+		06526C9E275F7FEA0024B129 /* SearchViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C9D275F7FEA0024B129 /* SearchViewControllerInput.swift */; };
+		06526CA0275F7FF90024B129 /* SearchViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06526C9F275F7FF90024B129 /* SearchViewControllerOutput.swift */; };
 		0669B860274E91640098F3CB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B85F274E91640098F3CB /* Utilities.swift */; };
 		0669B862274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0669B861274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 */; };
 		0669B864274EB76B0098F3CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B863274EB76B0098F3CB /* Constants.swift */; };
@@ -43,12 +65,34 @@
 		06C591B4274E669B002EA9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C591B2274E669B002EA9EB /* LaunchScreen.storyboard */; };
 		06C591D6274E6D47002EA9EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591D5274E6D47002EA9EB /* LoginViewController.swift */; };
 		06C591D8274E6D54002EA9EB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591D7274E6D54002EA9EB /* SignUpViewController.swift */; };
-		06C591DA274E6D5E002EA9EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591D9274E6D5D002EA9EB /* HomeViewController.swift */; };
+		06C591DA274E6D5E002EA9EB /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591D9274E6D5D002EA9EB /* RootTabBarViewController.swift */; };
 		06C591DD274E7607002EA9EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06C591DC274E7607002EA9EB /* GoogleService-Info.plist */; };
 		B4267907BAA79D97FFF4D07F /* Pods_Movie_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C97D1E32BAC4259D92D5FC8 /* Pods_Movie_Base.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06526C61275E96380024B129 /* TMDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBManager.swift; sourceTree = "<group>"; };
+		06526C64275E96950024B129 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		06526C66275E96C90024B129 /* NowPlayingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingModel.swift; sourceTree = "<group>"; };
+		06526C71275EA7080024B129 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		06526C73275EA72F0024B129 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06526C75275EA7480024B129 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		06526C7A275EA9180024B129 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		06526C7D275EA9350024B129 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		06526C7F275EA9400024B129 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
+		06526C81275EA94C0024B129 /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
+		06526C84275EA9660024B129 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		06526C86275EA9800024B129 /* HomeViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerInput.swift; sourceTree = "<group>"; };
+		06526C88275EA9910024B129 /* HomeViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerOutput.swift; sourceTree = "<group>"; };
+		06526C8A275EA9A30024B129 /* HomeRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterInput.swift; sourceTree = "<group>"; };
+		06526C8F275F7D100024B129 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		06526C92275F7F530024B129 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		06526C94275F7F5E0024B129 /* SearchInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorInput.swift; sourceTree = "<group>"; };
+		06526C96275F7F6D0024B129 /* SearchInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractorOutput.swift; sourceTree = "<group>"; };
+		06526C98275F7F7E0024B129 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		06526C9A275F7F900024B129 /* SearchRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouterInput.swift; sourceTree = "<group>"; };
+		06526C9D275F7FEA0024B129 /* SearchViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerInput.swift; sourceTree = "<group>"; };
+		06526C9F275F7FF90024B129 /* SearchViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerOutput.swift; sourceTree = "<group>"; };
 		0669B85F274E91640098F3CB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0669B861274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-tima-miroshnichenko-7989632.mp4"; sourceTree = "<group>"; };
 		0669B863274EB76B0098F3CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -87,7 +131,7 @@
 		06C591B5274E669B002EA9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06C591D5274E6D47002EA9EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		06C591D7274E6D54002EA9EB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		06C591D9274E6D5D002EA9EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06C591D9274E6D5D002EA9EB /* RootTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		06C591DC274E7607002EA9EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47017599288AD1F11796FD28 /* Pods-Movie Base.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie Base.debug.xcconfig"; path = "Target Support Files/Pods-Movie Base/Pods-Movie Base.debug.xcconfig"; sourceTree = "<group>"; };
 		9C97D1E32BAC4259D92D5FC8 /* Pods_Movie_Base.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Base.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +150,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06526C63275E96660024B129 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06526C66275E96C90024B129 /* NowPlayingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		06526C68275E98B30024B129 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06C591AD274E6697002EA9EB /* Movie_Base.xcdatamodeld */,
+				06C591B0274E669B002EA9EB /* Assets.xcassets */,
+				0669B861274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		06526C6A275E9EBC0024B129 /* Main Screen Module */ = {
+			isa = PBXGroup;
+			children = (
+				06526C70275EA6B30024B129 /* Profile Module */,
+				06526C6F275EA6A60024B129 /* Home Module */,
+				06526C6D275EA6960024B129 /* Search Module */,
+				06C591D9274E6D5D002EA9EB /* RootTabBarViewController.swift */,
+			);
+			path = "Main Screen Module";
+			sourceTree = "<group>";
+		};
+		06526C6D275EA6960024B129 /* Search Module */ = {
+			isa = PBXGroup;
+			children = (
+				06526C91275F7F120024B129 /* Model */,
+				06526C8C275F7CDE0024B129 /* Router */,
+				06526C8D275F7CE70024B129 /* Interactor */,
+				06526C79275EA8EA0024B129 /* Views */,
+				06526C8F275F7D100024B129 /* SearchPresenter.swift */,
+			);
+			path = "Search Module";
+			sourceTree = "<group>";
+		};
+		06526C6F275EA6A60024B129 /* Home Module */ = {
+			isa = PBXGroup;
+			children = (
+				06526C83275EA95B0024B129 /* Router */,
+				06526C7C275EA91F0024B129 /* Interactor */,
+				06526C78275EA8E20024B129 /* Views */,
+				06526C7A275EA9180024B129 /* HomePresenter.swift */,
+			);
+			path = "Home Module";
+			sourceTree = "<group>";
+		};
+		06526C70275EA6B30024B129 /* Profile Module */ = {
+			isa = PBXGroup;
+			children = (
+				06526C77275EA8D20024B129 /* Views */,
+			);
+			path = "Profile Module";
+			sourceTree = "<group>";
+		};
+		06526C77275EA8D20024B129 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06526C71275EA7080024B129 /* ProfileViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06526C78275EA8E20024B129 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06526C73275EA72F0024B129 /* HomeViewController.swift */,
+				06526C86275EA9800024B129 /* HomeViewControllerInput.swift */,
+				06526C88275EA9910024B129 /* HomeViewControllerOutput.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06526C79275EA8EA0024B129 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06526C75275EA7480024B129 /* SearchViewController.swift */,
+				06526C9D275F7FEA0024B129 /* SearchViewControllerInput.swift */,
+				06526C9F275F7FF90024B129 /* SearchViewControllerOutput.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06526C7C275EA91F0024B129 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				06526C7D275EA9350024B129 /* HomeInteractor.swift */,
+				06526C7F275EA9400024B129 /* HomeInteractorInput.swift */,
+				06526C81275EA94C0024B129 /* HomeInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		06526C83275EA95B0024B129 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				06526C84275EA9660024B129 /* HomeRouter.swift */,
+				06526C8A275EA9A30024B129 /* HomeRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		06526C8C275F7CDE0024B129 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				06526C98275F7F7E0024B129 /* SearchRouter.swift */,
+				06526C9A275F7F900024B129 /* SearchRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		06526C8D275F7CE70024B129 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				06526C92275F7F530024B129 /* SearchInteractor.swift */,
+				06526C94275F7F5E0024B129 /* SearchInteractorInput.swift */,
+				06526C96275F7F6D0024B129 /* SearchInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		06526C91275F7F120024B129 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06526C64275E96950024B129 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0669B8762753E1E70098F3CB /* Auth Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,10 +416,11 @@
 		06C591A3274E6697002EA9EB /* Movie Base */ = {
 			isa = PBXGroup;
 			children = (
+				06526C6A275E9EBC0024B129 /* Main Screen Module */,
+				06526C63275E96660024B129 /* Models */,
 				06C591D4274E6A30002EA9EB /* Assembly */,
 				06C591D3274E6A00002EA9EB /* Data Module */,
 				06C591BB274E6806002EA9EB /* Authentication Module */,
-				06C591D9274E6D5D002EA9EB /* HomeViewController.swift */,
 				06C591A6274E6697002EA9EB /* SceneDelegate.swift */,
 				06C591AA274E6697002EA9EB /* Main.storyboard */,
 				06C591A4274E6697002EA9EB /* AppDelegate.swift */,
@@ -265,12 +444,11 @@
 		06C591D3274E6A00002EA9EB /* Data Module */ = {
 			isa = PBXGroup;
 			children = (
-				0669B861274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 */,
+				06526C68275E98B30024B129 /* Resources */,
 				0669B85F274E91640098F3CB /* Utilities.swift */,
 				0669B863274EB76B0098F3CB /* Constants.swift */,
-				06C591AD274E6697002EA9EB /* Movie_Base.xcdatamodeld */,
-				06C591B0274E669B002EA9EB /* Assets.xcassets */,
 				0669B89E275412BD0098F3CB /* FirebaseManager.swift */,
+				06526C61275E96380024B129 /* TMDBManager.swift */,
 			);
 			path = "Data Module";
 			sourceTree = "<group>";
@@ -419,34 +597,56 @@
 				0669B8B1275429620098F3CB /* SignUpRouter.swift in Sources */,
 				06C591D6274E6D47002EA9EB /* LoginViewController.swift in Sources */,
 				0669B897275404230098F3CB /* LoginInteractorInput.swift in Sources */,
+				06526C9B275F7F900024B129 /* SearchRouterInput.swift in Sources */,
+				06526C8B275EA9A30024B129 /* HomeRouterInput.swift in Sources */,
 				0669B893275403F40098F3CB /* LoginViewControllerOutput.swift in Sources */,
 				0669B89D2754045D0098F3CB /* LoginRouterInput.swift in Sources */,
+				06526C80275EA9400024B129 /* HomeInteractorInput.swift in Sources */,
 				0669B8A5275429090098F3CB /* SignUpViewControllerInput.swift in Sources */,
+				06526C65275E96950024B129 /* MovieModel.swift in Sources */,
 				0669B89F275412BD0098F3CB /* FirebaseManager.swift in Sources */,
 				06C591A9274E6697002EA9EB /* AuthHomeViewController.swift in Sources */,
+				06526C99275F7F7E0024B129 /* SearchRouter.swift in Sources */,
+				06526C76275EA7480024B129 /* SearchViewController.swift in Sources */,
 				06C591AF274E6697002EA9EB /* Movie_Base.xcdatamodeld in Sources */,
+				06526C90275F7D100024B129 /* SearchPresenter.swift in Sources */,
+				06526C74275EA72F0024B129 /* HomeViewController.swift in Sources */,
+				06526C89275EA9910024B129 /* HomeViewControllerOutput.swift in Sources */,
 				06C591D8274E6D54002EA9EB /* SignUpViewController.swift in Sources */,
 				0669B87D2753E37B0098F3CB /* AuthHomeViewControllerOutput.swift in Sources */,
+				06526C67275E96C90024B129 /* NowPlayingModel.swift in Sources */,
 				0669B8812753E3B80098F3CB /* AuthHomePresenter.swift in Sources */,
 				0669B8B3275429710098F3CB /* SignUpRouterInput.swift in Sources */,
 				0669B8AC275429410098F3CB /* SignUpInteractorInput.swift in Sources */,
+				06526C9E275F7FEA0024B129 /* SearchViewControllerInput.swift in Sources */,
 				0669B8AE275429480098F3CB /* SignUpInteractorOutput.swift in Sources */,
+				06526C85275EA9660024B129 /* HomeRouter.swift in Sources */,
+				06526C62275E96380024B129 /* TMDBManager.swift in Sources */,
 				0669B89B2754043A0098F3CB /* LoginRouter.swift in Sources */,
+				06526C95275F7F5E0024B129 /* SearchInteractorInput.swift in Sources */,
 				0669B8952754040F0098F3CB /* LoginInteractor.swift in Sources */,
+				06526C7B275EA9180024B129 /* HomePresenter.swift in Sources */,
+				06526C7E275EA9350024B129 /* HomeInteractor.swift in Sources */,
 				0669B8A12754197A0098F3CB /* AuthHomeAssembly.swift in Sources */,
 				0669B8A327541EBB0098F3CB /* AuthLoginAssembly.swift in Sources */,
 				0669B860274E91640098F3CB /* Utilities.swift in Sources */,
+				06526C87275EA9800024B129 /* HomeViewControllerInput.swift in Sources */,
+				06526C93275F7F530024B129 /* SearchInteractor.swift in Sources */,
 				0669B891275403EB0098F3CB /* LoginViewControllerInput.swift in Sources */,
-				06C591DA274E6D5E002EA9EB /* HomeViewController.swift in Sources */,
+				06C591DA274E6D5E002EA9EB /* RootTabBarViewController.swift in Sources */,
 				0669B8A7275429130098F3CB /* SignUpViewControllerOutput.swift in Sources */,
+				06526C72275EA7080024B129 /* ProfileViewController.swift in Sources */,
 				0669B88E2753FFF20098F3CB /* LoginPresenter.swift in Sources */,
 				0669B8992754042C0098F3CB /* LoginInteractorOutput.swift in Sources */,
 				06C591A5274E6697002EA9EB /* AppDelegate.swift in Sources */,
+				06526C97275F7F6D0024B129 /* SearchInteractorOutput.swift in Sources */,
 				06C591A7274E6697002EA9EB /* SceneDelegate.swift in Sources */,
 				0669B8832753EC450098F3CB /* AuthHomeRouter.swift in Sources */,
 				0669B8852753ECAE0098F3CB /* AuthHomeRouterInput.swift in Sources */,
 				0669B8AA2754293A0098F3CB /* SignUpInteractor.swift in Sources */,
 				0669B8B52754297E0098F3CB /* SignUpPresenter.swift in Sources */,
+				06526CA0275F7FF90024B129 /* SearchViewControllerOutput.swift in Sources */,
+				06526C82275EA94C0024B129 /* HomeInteractorOutput.swift in Sources */,
 				0669B864274EB76B0098F3CB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,7 @@ final class LoginRouter: LoginRouterInput {
     //MARK: - Instance Methods
     
     func transitionToMainScreen() {
-        let homeViewController = loginViewController?.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homveViewController) as? HomeViewController
+        let homeViewController = loginViewController?.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? RootTabBarViewController
         
         loginViewController?.view.window?.rootViewController = homeViewController
         loginViewController?.view.window?.makeKeyAndVisible()
