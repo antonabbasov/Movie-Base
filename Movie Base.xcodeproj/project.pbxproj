@@ -418,7 +418,6 @@
 			children = (
 				06526C6A275E9EBC0024B129 /* Main Screen Module */,
 				06526C63275E96660024B129 /* Models */,
-				06C591D4274E6A30002EA9EB /* Assembly */,
 				06C591D3274E6A00002EA9EB /* Data Module */,
 				06C591BB274E6806002EA9EB /* Authentication Module */,
 				06C591A6274E6697002EA9EB /* SceneDelegate.swift */,
@@ -451,13 +450,6 @@
 				06526C61275E96380024B129 /* TMDBManager.swift */,
 			);
 			path = "Data Module";
-			sourceTree = "<group>";
-		};
-		06C591D4274E6A30002EA9EB /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assembly;
 			sourceTree = "<group>";
 		};
 		15C1B13E35CE80679FAA4435 /* Frameworks */ = {

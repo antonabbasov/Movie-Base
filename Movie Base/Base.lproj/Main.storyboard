@@ -38,7 +38,7 @@
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="signUpButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rxA-Px-9jY"/>
-                                            <segue destination="W7q-LF-Pfc" kind="show" id="fDy-dn-Ez0"/>
+                                            <segue destination="W7q-LF-Pfc" kind="show" identifier="homeToSignUp" id="fDy-dn-Ez0"/>
                                         </connections>
                                     </button>
                                 </subviews>
