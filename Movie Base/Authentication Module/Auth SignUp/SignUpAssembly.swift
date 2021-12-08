@@ -19,12 +19,12 @@ final class SignUpAssembly: NSObject {
         super.awakeFromNib()
         guard let signUpViewController = signUpViewController as? SignUpViewController else { return }
     
-        let signUpRouter = SignUpRouter(signUpViewController: signUpViewController)
+        let router = SignUpRouter(signUpViewController: signUpViewController)
         let firebaseManager = FirebaseManager()
-        let signUpInteractor = SignUpInteractor(firebaseManager: firebaseManager)
-        let signUpPresenter = SignUpPresenter(view: signUpViewController, interactor: signUpInteractor, router: signUpRouter)
+        let interactor = SignUpInteractor(firebaseManager: firebaseManager)
+        let presenter = SignUpPresenter(view: signUpViewController, interactor: interactor, router: router)
         
-        signUpInteractor.interactorOutput = signUpPresenter
-        signUpViewController.signUpViewOutput = signUpPresenter
+        interactor.interactorOutput = presenter
+        signUpViewController.signUpViewOutput = presenter
     }
 }

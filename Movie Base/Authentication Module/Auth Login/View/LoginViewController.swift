@@ -55,7 +55,7 @@ final class LoginViewController: UIViewController, LoginViewControllerInput {
     
     //MARK: - LoginViewControllerInput
     
-    internal func showError(_ message: String) {
+    func showError(_ message: String) {
         errorLabel.text = message
         errorLabel.isHidden = false
     }

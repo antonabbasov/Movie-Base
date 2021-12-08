@@ -49,19 +49,18 @@ final class SignUpPresenter: SignUpViewControllerOutput, SignUpInteractorOutput 
         }
     }
     
-    internal func errorSignUpUser(_ error: String) {
+    func errorSignUpUser(_ error: String) {
         view?.showError(error)
     }
     
     
     //MARK: - SignUpViewControllerOutput
     
-    internal func didPressSignUp(email: String?, password: String?, firstname: String?, lastname: String?) {
+    func didPressSignUp(email: String?, password: String?, firstname: String?, lastname: String?) {
         let error = validateUserCredentials(email: email, password: password, firstname: firstname, lastname: lastname)
         if let error = error {
             errorSignUpUser(error)
         } else {
-            
             let cleanedPassword = obtainClearedField(password)
             let cleanedEmail = obtainClearedField(email)
             let cleanedFirstname = obtainClearedField(firstname)
@@ -75,7 +74,7 @@ final class SignUpPresenter: SignUpViewControllerOutput, SignUpInteractorOutput 
     
     //MARK: - SignUpInteractorOutput
     
-    internal func didFinishSignUpUser() {
+    func didFinishSignUpUser() {
         router.transitionToMainScreen()
     }
 }

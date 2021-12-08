@@ -5,7 +5,7 @@
 //  Created by Anton on 06.12.2021.
 //
 
-final class MovieModel: Codable {
+struct MovieModel: Codable {
     let posterPath: String?
     let releaseDate: String
     let voteAverage: Float

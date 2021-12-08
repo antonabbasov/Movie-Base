@@ -44,7 +44,7 @@ final class LoginPresenter: LoginViewControllerOutput, LoginInteractorOutput {
     
     //MARK: - LoginViewControllerOutput
     
-    internal func didPressLogin(email: String?, password: String?) {
+    func didPressLogin(email: String?, password: String?) {
         let error = validateUserCredentials(email: email, password: password)
         
         if let error = error {
@@ -60,11 +60,11 @@ final class LoginPresenter: LoginViewControllerOutput, LoginInteractorOutput {
     
     //MARK: - LoginInteractorOutput
     
-    internal func didFinishLoginingUser() {
+    func didFinishLoginingUser() {
         router.transitionToMainScreen()
     }
     
-    internal func errorLoginingUser(_ error: String) {
+    func errorLoginingUser(_ error: String) {
         view?.showError(error)
     }
 }

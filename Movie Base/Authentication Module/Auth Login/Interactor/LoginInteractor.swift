@@ -21,7 +21,7 @@ final class LoginInteractor: LoginInteractorInput {
     }
     
     //MARK: - LoginInteractorInput
-    internal func loginUser(email: String, password: String) {
+    func loginUser(email: String, password: String) {
         firebaseManager.loginUser(email: email, password: password) { [weak self] (completionSuccses: Bool) in
             if completionSuccses {
                 self?.output?.didFinishLoginingUser()

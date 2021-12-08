@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-final class AuthHomeViewController: UIViewController {
+final class AuthViewController: UIViewController {
     
     //MARK: - Outlets
     
@@ -17,7 +17,7 @@ final class AuthHomeViewController: UIViewController {
     
     //MARK: - Variables
     
-    var authHomeViewControllerOutput: AuthHomeViewControllerOutput!
+    var authHomeViewControllerOutput: AuthViewControllerOutput!
     private var avPlayer: AVPlayer!
     private var avPlayerLayer: AVPlayerLayer!
     private var paused: Bool = false
@@ -35,9 +35,11 @@ final class AuthHomeViewController: UIViewController {
     // MARK: - Instance Methods
     
     private func playBackGroundVideo() {
-        let theURL = Bundle.main.url(forResource:Constants.AuthHomeControllerVideo.authHomeControllerVideoPath, withExtension: "mp4")
+        guard let theURL = Bundle.main.url(forResource:Constants.AuthHomeControllerVideo.authHomeControllerVideoPath, withExtension: "mp4") else {
+            return
+        }
         
-        avPlayer = AVPlayer(url: theURL!)
+        avPlayer = AVPlayer(url: theURL)
         avPlayerLayer = AVPlayerLayer(player: avPlayer)
         avPlayerLayer.videoGravity = .resizeAspectFill
         avPlayer.volume = 0
@@ -58,7 +60,7 @@ final class AuthHomeViewController: UIViewController {
         p.seek(to: .zero, completionHandler: nil)
     }
     
-    private func setup() {
+    private func setupButtons() {
         Utilities.styleFilledButton(loginButton)
         Utilities.styleFilledButton(signUpButton)
         loginButton.titleLabel?.textColor = UIColor.white
@@ -69,7 +71,8 @@ final class AuthHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playBackGroundVideo()
-        setup()
+        setupButtons()
+        authHomeViewControllerOutput.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -32,10 +32,10 @@
 		0669B860274E91640098F3CB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B85F274E91640098F3CB /* Utilities.swift */; };
 		0669B862274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0669B861274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 */; };
 		0669B864274EB76B0098F3CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B863274EB76B0098F3CB /* Constants.swift */; };
-		0669B87D2753E37B0098F3CB /* AuthHomeViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B87C2753E37B0098F3CB /* AuthHomeViewControllerOutput.swift */; };
-		0669B8812753E3B80098F3CB /* AuthHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8802753E3B80098F3CB /* AuthHomePresenter.swift */; };
-		0669B8832753EC450098F3CB /* AuthHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8822753EC450098F3CB /* AuthHomeRouter.swift */; };
-		0669B8852753ECAE0098F3CB /* AuthHomeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8842753ECAE0098F3CB /* AuthHomeRouterInput.swift */; };
+		0669B87D2753E37B0098F3CB /* AuthViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B87C2753E37B0098F3CB /* AuthViewControllerOutput.swift */; };
+		0669B8812753E3B80098F3CB /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8802753E3B80098F3CB /* AuthPresenter.swift */; };
+		0669B8832753EC450098F3CB /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8822753EC450098F3CB /* AuthRouter.swift */; };
+		0669B8852753ECAE0098F3CB /* AuthRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8842753ECAE0098F3CB /* AuthRouterInput.swift */; };
 		0669B88E2753FFF20098F3CB /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B88D2753FFF20098F3CB /* LoginPresenter.swift */; };
 		0669B891275403EB0098F3CB /* LoginViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B890275403EB0098F3CB /* LoginViewControllerInput.swift */; };
 		0669B893275403F40098F3CB /* LoginViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B892275403F40098F3CB /* LoginViewControllerOutput.swift */; };
@@ -45,7 +45,7 @@
 		0669B89B2754043A0098F3CB /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B89A2754043A0098F3CB /* LoginRouter.swift */; };
 		0669B89D2754045D0098F3CB /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B89C2754045D0098F3CB /* LoginRouterInput.swift */; };
 		0669B89F275412BD0098F3CB /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B89E275412BD0098F3CB /* FirebaseManager.swift */; };
-		0669B8A12754197A0098F3CB /* AuthHomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A02754197A0098F3CB /* AuthHomeAssembly.swift */; };
+		0669B8A12754197A0098F3CB /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A02754197A0098F3CB /* AuthAssembly.swift */; };
 		0669B8A327541EBB0098F3CB /* AuthLoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A227541EBB0098F3CB /* AuthLoginAssembly.swift */; };
 		0669B8A5275429090098F3CB /* SignUpViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A4275429090098F3CB /* SignUpViewControllerInput.swift */; };
 		0669B8A7275429130098F3CB /* SignUpViewControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8A6275429130098F3CB /* SignUpViewControllerOutput.swift */; };
@@ -58,7 +58,7 @@
 		0669B8B7275436120098F3CB /* SignUpAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0669B8B6275436120098F3CB /* SignUpAssembly.swift */; };
 		06C591A5274E6697002EA9EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591A4274E6697002EA9EB /* AppDelegate.swift */; };
 		06C591A7274E6697002EA9EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591A6274E6697002EA9EB /* SceneDelegate.swift */; };
-		06C591A9274E6697002EA9EB /* AuthHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591A8274E6697002EA9EB /* AuthHomeViewController.swift */; };
+		06C591A9274E6697002EA9EB /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C591A8274E6697002EA9EB /* AuthViewController.swift */; };
 		06C591AC274E6697002EA9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C591AA274E6697002EA9EB /* Main.storyboard */; };
 		06C591AF274E6697002EA9EB /* Movie_Base.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06C591AD274E6697002EA9EB /* Movie_Base.xcdatamodeld */; };
 		06C591B1274E669B002EA9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C591B0274E669B002EA9EB /* Assets.xcassets */; };
@@ -96,10 +96,10 @@
 		0669B85F274E91640098F3CB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0669B861274E97590098F3CB /* pexels-tima-miroshnichenko-7989632.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-tima-miroshnichenko-7989632.mp4"; sourceTree = "<group>"; };
 		0669B863274EB76B0098F3CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0669B87C2753E37B0098F3CB /* AuthHomeViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeViewControllerOutput.swift; sourceTree = "<group>"; };
-		0669B8802753E3B80098F3CB /* AuthHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomePresenter.swift; sourceTree = "<group>"; };
-		0669B8822753EC450098F3CB /* AuthHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeRouter.swift; sourceTree = "<group>"; };
-		0669B8842753ECAE0098F3CB /* AuthHomeRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeRouterInput.swift; sourceTree = "<group>"; };
+		0669B87C2753E37B0098F3CB /* AuthViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerOutput.swift; sourceTree = "<group>"; };
+		0669B8802753E3B80098F3CB /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		0669B8822753EC450098F3CB /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		0669B8842753ECAE0098F3CB /* AuthRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouterInput.swift; sourceTree = "<group>"; };
 		0669B88D2753FFF20098F3CB /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		0669B890275403EB0098F3CB /* LoginViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerInput.swift; sourceTree = "<group>"; };
 		0669B892275403F40098F3CB /* LoginViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerOutput.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		0669B89A2754043A0098F3CB /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		0669B89C2754045D0098F3CB /* LoginRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
 		0669B89E275412BD0098F3CB /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
-		0669B8A02754197A0098F3CB /* AuthHomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeAssembly.swift; sourceTree = "<group>"; };
+		0669B8A02754197A0098F3CB /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
 		0669B8A227541EBB0098F3CB /* AuthLoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginAssembly.swift; sourceTree = "<group>"; };
 		0669B8A4275429090098F3CB /* SignUpViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerInput.swift; sourceTree = "<group>"; };
 		0669B8A6275429130098F3CB /* SignUpViewControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerOutput.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		06C591A1274E6697002EA9EB /* Movie Base.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Base.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C591A4274E6697002EA9EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C591A6274E6697002EA9EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06C591A8274E6697002EA9EB /* AuthHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHomeViewController.swift; sourceTree = "<group>"; };
+		06C591A8274E6697002EA9EB /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		06C591AB274E6697002EA9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06C591AE274E6697002EA9EB /* Movie_Base.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movie_Base.xcdatamodel; sourceTree = "<group>"; };
 		06C591B0274E669B002EA9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -287,10 +287,10 @@
 		0669B8762753E1E70098F3CB /* Auth Home */ = {
 			isa = PBXGroup;
 			children = (
-				0669B8A02754197A0098F3CB /* AuthHomeAssembly.swift */,
+				0669B8A02754197A0098F3CB /* AuthAssembly.swift */,
 				0669B87E2753E3860098F3CB /* Router */,
 				0669B8792753E3130098F3CB /* View */,
-				0669B8802753E3B80098F3CB /* AuthHomePresenter.swift */,
+				0669B8802753E3B80098F3CB /* AuthPresenter.swift */,
 			);
 			path = "Auth Home";
 			sourceTree = "<group>";
@@ -322,8 +322,8 @@
 		0669B8792753E3130098F3CB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				06C591A8274E6697002EA9EB /* AuthHomeViewController.swift */,
-				0669B87C2753E37B0098F3CB /* AuthHomeViewControllerOutput.swift */,
+				06C591A8274E6697002EA9EB /* AuthViewController.swift */,
+				0669B87C2753E37B0098F3CB /* AuthViewControllerOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -331,8 +331,8 @@
 		0669B87E2753E3860098F3CB /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				0669B8822753EC450098F3CB /* AuthHomeRouter.swift */,
-				0669B8842753ECAE0098F3CB /* AuthHomeRouterInput.swift */,
+				0669B8822753EC450098F3CB /* AuthRouter.swift */,
+				0669B8842753ECAE0098F3CB /* AuthRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -597,7 +597,7 @@
 				0669B8A5275429090098F3CB /* SignUpViewControllerInput.swift in Sources */,
 				06526C65275E96950024B129 /* MovieModel.swift in Sources */,
 				0669B89F275412BD0098F3CB /* FirebaseManager.swift in Sources */,
-				06C591A9274E6697002EA9EB /* AuthHomeViewController.swift in Sources */,
+				06C591A9274E6697002EA9EB /* AuthViewController.swift in Sources */,
 				06526C99275F7F7E0024B129 /* SearchRouter.swift in Sources */,
 				06526C76275EA7480024B129 /* SearchViewController.swift in Sources */,
 				06C591AF274E6697002EA9EB /* Movie_Base.xcdatamodeld in Sources */,
@@ -605,9 +605,9 @@
 				06526C74275EA72F0024B129 /* HomeViewController.swift in Sources */,
 				06526C89275EA9910024B129 /* HomeViewControllerOutput.swift in Sources */,
 				06C591D8274E6D54002EA9EB /* SignUpViewController.swift in Sources */,
-				0669B87D2753E37B0098F3CB /* AuthHomeViewControllerOutput.swift in Sources */,
+				0669B87D2753E37B0098F3CB /* AuthViewControllerOutput.swift in Sources */,
 				06526C67275E96C90024B129 /* NowPlayingModel.swift in Sources */,
-				0669B8812753E3B80098F3CB /* AuthHomePresenter.swift in Sources */,
+				0669B8812753E3B80098F3CB /* AuthPresenter.swift in Sources */,
 				0669B8B3275429710098F3CB /* SignUpRouterInput.swift in Sources */,
 				0669B8AC275429410098F3CB /* SignUpInteractorInput.swift in Sources */,
 				06526C9E275F7FEA0024B129 /* SearchViewControllerInput.swift in Sources */,
@@ -619,7 +619,7 @@
 				0669B8952754040F0098F3CB /* LoginInteractor.swift in Sources */,
 				06526C7B275EA9180024B129 /* HomePresenter.swift in Sources */,
 				06526C7E275EA9350024B129 /* HomeInteractor.swift in Sources */,
-				0669B8A12754197A0098F3CB /* AuthHomeAssembly.swift in Sources */,
+				0669B8A12754197A0098F3CB /* AuthAssembly.swift in Sources */,
 				0669B8A327541EBB0098F3CB /* AuthLoginAssembly.swift in Sources */,
 				0669B860274E91640098F3CB /* Utilities.swift in Sources */,
 				06526C87275EA9800024B129 /* HomeViewControllerInput.swift in Sources */,
@@ -633,8 +633,8 @@
 				06C591A5274E6697002EA9EB /* AppDelegate.swift in Sources */,
 				06526C97275F7F6D0024B129 /* SearchInteractorOutput.swift in Sources */,
 				06C591A7274E6697002EA9EB /* SceneDelegate.swift in Sources */,
-				0669B8832753EC450098F3CB /* AuthHomeRouter.swift in Sources */,
-				0669B8852753ECAE0098F3CB /* AuthHomeRouterInput.swift in Sources */,
+				0669B8832753EC450098F3CB /* AuthRouter.swift in Sources */,
+				0669B8852753ECAE0098F3CB /* AuthRouterInput.swift in Sources */,
 				0669B8AA2754293A0098F3CB /* SignUpInteractor.swift in Sources */,
 				0669B8B52754297E0098F3CB /* SignUpPresenter.swift in Sources */,
 				06526CA0275F7FF90024B129 /* SearchViewControllerOutput.swift in Sources */,

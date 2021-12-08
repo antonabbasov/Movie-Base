@@ -20,11 +20,11 @@ final class AuthLoginAssembly: NSObject {
         guard let loginViewController = loginViewController as? LoginViewController else { return }
         
         let firebaseManager = FirebaseManager()
-        let loginRouter = LoginRouter(loginViewCotroller: loginViewController)
-        let loginInteractor = LoginInteractor(firebaseManager: firebaseManager)
-        let loginPresenter = LoginPresenter(view: loginViewController, interactor: loginInteractor, router: loginRouter)
+        let router = LoginRouter(loginViewCotroller: loginViewController)
+        let interactor = LoginInteractor(firebaseManager: firebaseManager)
+        let presenter = LoginPresenter(view: loginViewController, interactor: interactor, router: router)
         
-        loginInteractor.output = loginPresenter
-        loginViewController.loginViewOutput = loginPresenter
+        interactor.output = presenter
+        loginViewController.loginViewOutput = presenter
     }
 }
