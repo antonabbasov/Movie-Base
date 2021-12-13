@@ -17,4 +17,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Core'
+pod 'Alamofire', '~> 5.4'
+pod 'SnapKit', '~> 5.0.0'
+pod 'Moya', '~> 15.0'
 end
